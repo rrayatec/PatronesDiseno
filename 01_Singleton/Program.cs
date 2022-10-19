@@ -1,4 +1,6 @@
-﻿namespace Patrones
+﻿// un solo logger para una actividad
+//evitamos crear los New Singleton
+namespace Patrones
 {
     class MainApp
     {
@@ -21,7 +23,7 @@
 
             LoadBalancer b4 = LoadBalancer.GetLoadBalancer();
 
-            // Same instance?
+            // Same instance?vi
 
             if (b1 == b2 && b2 == b3 && b3 == b4)
 
