@@ -5,28 +5,30 @@ namespace Patrones.AbstractFactory
     {
         static void Main(string[] args)
         {
+            // Fabrica 1
             IFabrica mifabrica = new FabricaQuimica();
             mifabrica.crearProducto();
 
-            IProductoLeche mileche = mifabrica.ObtenerProductoLeche;
-            IProductoSaborizante misabor = mifabrica.ObtenerSabor;
+            IProductoLeche _leche_ = mifabrica.ObtenerProductoLeche;
+            IProductoSaborizante _sabor_ = mifabrica.ObtenerSabor;
 
-            mileche.producir();
-            mileche.obtenerDatos();
+            _leche_.producir();
+            _leche_.obtenerDatos();
 
-            Console.WriteLine("_Mi malteada es de {0} y {1}", mileche.obtenerDatos(), misabor.informacion());
+            Console.WriteLine("_Mi malteada es de {0} y {1}", _leche_.obtenerDatos(), _sabor_.informacion());
             Console.WriteLine("---");
-
+            
+            // Fabrica 2
             mifabrica = new FabricaNatural();
             mifabrica.crearProducto();
 
-            mileche = mifabrica.ObtenerProductoLeche;
-            misabor = mifabrica.ObtenerSabor;
+            _leche_ = mifabrica.ObtenerProductoLeche;
+            _sabor_ = mifabrica.ObtenerSabor;
 
-            mileche.producir();
-            mileche.obtenerDatos();
+            _leche_.producir();
+            _leche_.obtenerDatos();
 
-            Console.WriteLine("-Mi malteada es de {0} y {1}", mileche.obtenerDatos(), misabor.informacion());
+            Console.WriteLine("-Mi malteada es de {0} y {1}", _leche_.obtenerDatos(), _sabor_.informacion());
 
 
         }
