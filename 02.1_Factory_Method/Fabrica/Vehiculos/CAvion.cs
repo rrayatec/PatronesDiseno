@@ -2,21 +2,24 @@ namespace MetodoFabrica02.Fabrica
 {
     internal class CAvion : IVehiculo
     {
-        public void Encender()
-        {
-            Console.WriteLine("Encendiendo el Avion");
-        }
         public void Acelerar()
         {
-            Console.WriteLine("Acelerando el Avion");
+            throw new NotImplementedException();
         }
+
+        public void Encender()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Frenar()
         {
-            Console.WriteLine("Frenando el Avion");
+            throw new NotImplementedException();
         }
+
         public void Girar()
         {
-            Console.WriteLine("Girando el Avion");
+            throw new NotImplementedException();
         }
     }
 }

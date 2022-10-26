@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(string.Join('-', args));
             Director miDirector = new Director();
             BuilderNormal normal = new BuilderNormal();
             miDirector.Construye(normal);

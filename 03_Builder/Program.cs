@@ -15,23 +15,13 @@ namespace Patrones.Builder
             // Crear director y contructores
 
             Director director = new Director();
-
-
-
             Builder b1 = new ConcreteBuilder1();
-
             Builder b2 = new ConcreteBuilder2();
 
-
-
             // Construir dos productos
-
             director.Construct(b1);
-
             Product p1 = b1.GetResult();
-
             p1.Show();
-
 
 
             director.Construct(b2);

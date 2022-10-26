@@ -1,5 +1,7 @@
-﻿
-namespace MetodoFabrica02.Fabrica.Creadores
+﻿using MetodoFabrica02.Fabrica;
+using MetodoFabrica02.Fabrica.Creadores;
+
+namespace MetodoFabrica02
 {
     class Program
     {
