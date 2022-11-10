@@ -11,4 +11,9 @@ namespace Adapter
         XmlDocument GetMobilesXMLSpecifications(ImovilJSONOrigin movilJSONAdapter);
     }
 
+    interface ImovilMP3Target
+    {
+        XmlDocument GetMobilesXMLSpecifications(ImovilJSONOrigin movilJSONAdapter);
+    }
+
 }

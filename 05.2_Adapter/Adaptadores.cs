@@ -10,13 +10,15 @@ namespace Adapter
             List<Movil> moviles = new List<Movil>();
             moviles.Add(new Movil
             {
-                modelo = "Iphone 13"
+                modelo = "Iphone 13",
+                costo = 345.00
             });
             moviles.Add(new Movil
             {
-                modelo = "Iphone 14"
+                modelo = "Iphone 14",
+                costo = 345.00
             });
-            dynamic collectionMobiles = new { collectionMobiles = moviles };
+            dynamic collectionMobiles = new { Apple = moviles };
             return JsonConvert.SerializeObject(collectionMobiles);
 
         }
@@ -29,8 +31,5 @@ namespace Adapter
             XmlDocument doc = JsonConvert.DeserializeXmlNode(jsonMovil, "Mobiles", true);
             return doc;
         }
-
-
     }
-
 }
