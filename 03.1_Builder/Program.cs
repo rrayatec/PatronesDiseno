@@ -4,12 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(string.Join('-', args));
             Director miDirector = new Director();
             BuilderNormal normal = new BuilderNormal();
             miDirector.Construye(normal);
             Producto auto1 = normal.ObtenProducto();
-            auto1.MostrarAuto();            
+            auto1.MostrarAuto();
         }
     }
 }

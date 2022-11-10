@@ -13,7 +13,5 @@ namespace Patrones.AbstractFactory
         {
             Console.WriteLine("Se produce Vainilla12WER");
         }
-
-
     }
 }

@@ -12,6 +12,8 @@ namespace Builder03
             Console.WriteLine("Se ha colocado el motor {0} ", motor);
         }
 
+        
+
         internal void MostrarAuto()
         {
             Console.WriteLine("motor: {0}", motor);

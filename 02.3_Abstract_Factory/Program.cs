@@ -18,6 +18,8 @@ namespace Patrones.AbstractFactory
             Console.WriteLine("_Mi malteada es de {0} y {1}", _leche_.obtenerDatos(), _sabor_.informacion());
             Console.WriteLine("---");
             
+
+            
             // Fabrica 2
             mifabrica = new FabricaNatural();
             mifabrica.crearProducto();
