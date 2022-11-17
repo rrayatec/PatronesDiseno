@@ -14,8 +14,5 @@
             resultado = calcu.sumar(2, 3);
             System.Console.WriteLine("El resultado es: {0}", resultado);
         }
-
     }
 }
-
-

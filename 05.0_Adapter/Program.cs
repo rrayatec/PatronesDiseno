@@ -26,7 +26,7 @@ namespace Patrones.AdapterReal
         {
             // Elemento no adaptado
 
-            Libro desconocido = new Libro("L01");
+            Libro desconocido = new Libro("Desconocido");
 
             desconocido.MostrarInfo();
 
